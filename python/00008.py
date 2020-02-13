@@ -118,11 +118,6 @@ def main():
         list_d_ip.append(decimalAddress(list_b_ip[index]))
         print(list_d_ip[index])
 
-    
-
-
-    
-
 #this function is used to convert the program into a library in case you want to use it in that way
 if __name__ == "__main__":
     main()
