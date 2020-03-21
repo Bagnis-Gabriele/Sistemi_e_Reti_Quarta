@@ -1,9 +1,8 @@
 """
-Robot e grafi
+carica Matrice per robot e grafi
 """
 def main():
     scacchiera = []
-    dimMatrice = 0
     dim = int(input("Inserisci la dimensione della scacchiera: "))
     for i in range(0, dim):
         riga = []
@@ -15,7 +14,6 @@ def main():
         ostacolo = input("Inserisci le cordinate della cella con ostacolo (x.y) ")
         cordinate = ostacolo.split(".")
         scacchiera[int(cordinate[0])][int(cordinate[1])] = 0
-        dimMatrice = dimMatrice + 1
         ancora= int(input("c'è n'è ancora? (0 per terminare)"))
     
     scacchiera_bool=[]
@@ -23,9 +21,9 @@ def main():
         riga=[]
         for c,_ in enumerate(r):
             if scacchiera[n][c]==1:
-                riga.append("True")
+                riga.append(True)
             else:
-                riga.append("False")
+                riga.append(False)
         scacchiera_bool.append(riga)
     
     for r in scacchiera_bool:
