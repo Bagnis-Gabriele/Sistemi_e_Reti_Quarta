@@ -1,5 +1,5 @@
 """
-dykstra
+dijkstra 
 """
 
 def MatricePesataOrientata():
@@ -29,7 +29,7 @@ def MatricePesataOrientata():
 
     return matrice
 
-def dykstra(matrice,node):
+def dijkstra(matrice,node):
     if len(matrice)-1 < node:
         print("Non esiste il nodo inserito")
         return 0;
@@ -66,12 +66,12 @@ def main():
     scacchiera = MatricePesataOrientata()
     nodo = -1
     while nodo == -1:
-        nodo = int(input("inserire il nodo a cui applicare dykstra:  "))
+        nodo = int(input("inserire il nodo a cui applicare dijkstra:  "))
         if len(scacchiera)-1 < nodo:
             print("Non esiste il nodo inserito")
             nodo=-1
     percorsi = {}
-    percorsi = dykstra(scacchiera,nodo)
+    percorsi = dijkstra(scacchiera,nodo)
     print(percorsi)
     
 if __name__ == "__main__":
