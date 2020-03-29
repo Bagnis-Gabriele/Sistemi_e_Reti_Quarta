@@ -1,6 +1,6 @@
 """
 Bagnis Gabriele
-Esercizio 7: Correzione della verifica
+Esercizio 7: Correzione della verifica sulle carte
 """
 
 import random
