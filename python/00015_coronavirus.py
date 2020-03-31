@@ -21,7 +21,7 @@ def Matrice(dizionario):
 
 def readData():
     dizionario = {}
-    data = open('data.txt', 'r') 
+    data = open('00015_data.txt', 'r') 
     linee = data.readlines() 
     for line in linee:
         line=line.replace('\n','')
