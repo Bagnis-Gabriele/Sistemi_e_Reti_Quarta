@@ -2,7 +2,7 @@
 Robot e Grafi completo
 """
 
-def DizionarioDaMatrice(matrice):
+def DizionarioDiAdiacenzeDaMatrice(matrice):
 
     #funzione che numera le caselle esistenti della matrice a partire da 1
     n_nodi = 1
@@ -64,7 +64,7 @@ def main():
                 riga.append(False)
         scacchiera_bool.append(riga)
     
-    print(DizionarioDaMatrice(scacchiera_bool))
+    print(DizionarioDiAdiacenzeDaMatrice(scacchiera_bool))
     
 
 if __name__ == "__main__":
